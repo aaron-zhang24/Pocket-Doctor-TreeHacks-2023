@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
 
+// YOU NEED TO PROVIDE YOUR OWN API_TOKEN (i.e. openAI)
 const token = process.env.API_TOKEN
 const configuration = new Configuration({apiKey: token});
 const openai = new OpenAIApi(configuration);
